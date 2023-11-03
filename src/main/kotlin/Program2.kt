@@ -48,6 +48,20 @@ fun myFun(exLambda:()->Unit){
     //So that I discover super-function !!
     //You can send some sequence of operations as parameters to the function
     exLambda()
+
+
+}
+
+fun operate(operation:String):(Int,Int)->Int{
+    if(operation=="add"){
+        return {x,y->x+y}
+    }else if (operation=="minus"){
+        return {x,y->x-y}
+    }else{
+        return {x,y->x}
+    }
+
+
 }
 fun main(){
     convert(20.0) { c: Double -> c * 1.8 + 32 }
@@ -60,8 +74,27 @@ fun main(){
 
     //Think about android studio setOnClicker Method
     myFun {
-        print("Some Operation")
+        println("Some Operation")
     }
+
+    /**
+     * When you have a lambda whose body has multiple lines, the last evaluated
+     * expression is used as the lambda's return value
+     */
+
+   val x= { x: Int -> println("Test")
+       x+2
+       //Returns ;
+       x + 5 }
+
+    var result = operate("add").invoke(3,5)
+    //operate("add")--REFERS FUNCTION'S ITSELF
+    result=operate("minus")(10,12)
+
+    println(result)
+
+
+
 
 
 
