@@ -1,16 +1,16 @@
-fun main(args:Array<String>){
+fun main(args:Array<String>) {
 
-    val adder={ x:Int -> x+5} //f(x) = x+5
+    val adder = { x: Int -> x + 5 } //f(x) = x+5
     adder.invoke(10) // f(10) = 15
-    val str ={"pow"} // no parameter f =  pow
+    val str = { "pow" } // no parameter f =  pow
 
-    val addInts = {x:Int, y:Int-> x+y} //f(x,y) = x+y
-    val result = addInts.invoke(10,15)// result = f(10,15) = 25
+    val addInts = { x: Int, y: Int -> x + y } //f(x,y) = x+y
+    val result = addInts.invoke(10, 15)// result = f(10,15) = 25
     println(result)
 
     //Note:Pass arguments in orders...
-    val stringPrinter = {a:String, b:String->a +" x " + b}
-    println(stringPrinter("serhat","erdem"))
+    val stringPrinter = { a: String, b: String -> a + " x " + b }
+    println(stringPrinter("serhat", "erdem"))
 
     /**
      * Just like any other sort of object, a lambda has a type.
@@ -32,20 +32,21 @@ fun main(args:Array<String>){
 
     //How to initialize a lambda expression lately
 
-    val greeting : () -> String = {"hello"}
+    val greeting: () -> String = { "hello" }
 
     val mySpecialFun: (Double, Double) -> Double
-    mySpecialFun = {x,y -> Math.sqrt(x*y)}
-    println(mySpecialFun.invoke(10.0,10.0))
+    mySpecialFun = { x, y -> Math.sqrt(x * y) }
+    println(mySpecialFun.invoke(10.0, 10.0))
 
     //If you have a single parameter, you can use "it" keyword
 
     //Instead of this,
-    val addSix:(Int)->Int = {x:Int -> x+6}
+    val addSix: (Int) -> Int = { x: Int -> x + 6 }
 
     //You can do this;
 
-    val addSixx:(Int)->Int ={it+5}
+    val addSixx: (Int) -> Int = { it + 5 }
+
     /**
      * In the above code, { it + 5 } is equivalent to  { x -> x + 5 }
      * but it' much more concise.
@@ -53,7 +54,7 @@ fun main(args:Array<String>){
 
     //You must care about lambda's type;
 
-    var xOperation:(x:Double, y:Double)->Double = {x,y->Math.sqrt(x+y)}
+    var xOperation: (x: Double, y: Double) -> Double = { x, y -> Math.sqrt(x + y) }
     //(Double, Double) -> Double is xOperation's type
 
     //xOperation = {x:Int,y:Int->x+y}
@@ -67,18 +68,15 @@ fun main(args:Array<String>){
      * the text "Hi!" when it is invoked.
      */
 
-    val myLambda:()->Unit = { println("Hi!")  }
+    val myLambda: () -> Unit = { println("Hi!") }
     myLambda.invoke()
 
-    var a:Int?=null
-    val b :()->Unit = {a=12}
+    var a: Int? = null
+    val b: () -> Unit = { a = 12 }
     b.invoke()
     println(a)
 
-
-
-
-
+    
 
 
 
