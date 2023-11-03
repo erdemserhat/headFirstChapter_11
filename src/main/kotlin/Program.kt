@@ -76,7 +76,15 @@ fun main(args:Array<String>) {
     b.invoke()
     println(a)
 
-    
+    System.out.println("x")
+    println("x")
+    val f={x:Int->x+5}
+
+
+
+
+
+
 
 
 
