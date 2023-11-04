@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e05ae78-4c76-4e05-95ee-d89e2865257d" name="Changes" comment="-Basics of lambda concept&#10;-Mini Triangle Project&#10;-You can pass lambdas as a parameter :))">
+    <list default="true" id="2e05ae78-4c76-4e05-95ee-d89e2865257d" name="Changes" comment="-Basics of lambda concept&#10;-Mini Triangle Project&#10;-You can pass lambdas as a parameter :))&#10;-Returning a lambda expression">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/password_generator/Digits.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/password_generator/Generator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/password_generator/PasswordParameters.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/password_generator/PasswordValidation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/password_generator/Program.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/password_generator/ResourceString.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Program2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Program2.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +32,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/kotlin/Program.kt" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2Xf3CPBeMP9ejDJAUPryFVSYRU4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,6 +49,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Serhat/Downloads/demo/headFirstChapter_11/src/main/kotlin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,6 +57,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Serhat\Downloads\demo\headFirstChapter_11\src\main\kotlin" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MiniTriangleProjectKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MiniTriangleProjectKt" />
@@ -73,7 +84,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699006181943</updated>
-      <workItem from="1699006182956" duration="16272000" />
+      <workItem from="1699006182956" duration="16452000" />
+      <workItem from="1699035806083" duration="226000" />
+      <workItem from="1699036125910" duration="97000" />
+      <workItem from="1699043712985" duration="19000" />
+      <workItem from="1699091234418" duration="1722000" />
     </task>
     <task id="LOCAL-00001" summary="-Basics of lambda concept">
       <option name="closed" value="true" />
@@ -99,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699031431327</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-Basics of lambda concept&#10;-Mini Triangle Project&#10;-You can pass lambdas as a parameter :))&#10;-Returning a lambda expression">
+      <option name="closed" value="true" />
+      <created>1699035781956</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699035781956</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +132,17 @@
     <MESSAGE value="-Basics of lambda concept" />
     <MESSAGE value="-Basics of lambda concept&#10;-Mini Triangle Project" />
     <MESSAGE value="-Basics of lambda concept&#10;-Mini Triangle Project&#10;-You can pass lambdas as a parameter :))" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Basics of lambda concept&#10;-Mini Triangle Project&#10;-You can pass lambdas as a parameter :))" />
+    <MESSAGE value="-Basics of lambda concept&#10;-Mini Triangle Project&#10;-You can pass lambdas as a parameter :))&#10;-Returning a lambda expression" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Basics of lambda concept&#10;-Mini Triangle Project&#10;-You can pass lambdas as a parameter :))&#10;-Returning a lambda expression" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
