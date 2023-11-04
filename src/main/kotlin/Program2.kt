@@ -63,6 +63,14 @@ fun operate(operation:String):(Int,Int)->Int{
 
 
 }
+fun operate2(operationByNumber:Int):(Int)->Int{
+        return {
+            println(operationByNumber*it)
+            operationByNumber*it}
+}
+
+
+
 fun main(){
     convert(20.0) { c: Double -> c * 1.8 + 32 }
     // or ;
@@ -93,6 +101,7 @@ fun main(){
 
     println(result)
 
+    val result2= operate2(2)(3)
 
 
 
